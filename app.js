@@ -1,22 +1,20 @@
-const amt = 10
-
-if (amt<=10)
-    console.log('10')
-else
-    console.log('laul')
-
+// GLOBALS __dirname, __filename, module,process,require
 // console.log(process)
-var s=1
-var m=0
 
-setInterval(() => {
+// const zolo = "zoro"
+// const ruffy = "luffy"
 
-    if (s>59){
-        m++
-        s-=60
-    }
-    if (m==0)
-        console.log(s++, "sec")
-    else
-        console.log(m," min ",s++," sec")
-}, 1000)
+// const welcome =(name)=>{
+//     // console.log("HAVE YOU MET", name)
+//     console.log(`HAVE YOU MET ${name}`)
+// }
+
+// welcome(zolo)
+// welcome(ruffy)
+// welcome("new_one")
+
+const _ = require('lodash')
+
+const items = [1,[2,[3,[5]]]]
+const flattenItems = _.flattenDeep(items)
+console.log(flattenItems)
